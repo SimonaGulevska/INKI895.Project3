@@ -22,7 +22,7 @@ int main()
 	cin>>str1;
 	cout<<"\n Vnesete mail za komunikacija so fax => ";
 	cin>>str2;
-    //Deklariranje na promenlivi
+    //deklariranje na promenlivi
 	int nstr1,nstr2;
 	//odreduvanje na dolzinite na dvata stingovi
 	nstr1=str1.length();
@@ -54,7 +54,7 @@ int main()
 		if((*iterString)!=0)
 		cout<<*iterString<<" ";
 	}
-	//Pristap do datotekata
+	//pristap do datotekata
 
 	ofstream Simona("INKI895.Proekt03.txt");
 	Simona<<"\n Spoeni string => "<<str1<<endl;
