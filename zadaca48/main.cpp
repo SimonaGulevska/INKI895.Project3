@@ -22,10 +22,32 @@ int main()
 	cin>>str1;
 	cout<<"\n Vnesete mail za komunikacija so fax => ";
 	cin>>str2;
-//Deklariranje na promenlivi
+    //Deklariranje na promenlivi
 	int nstr1,nstr2;
 	//odreduvanje na dolzinite na dvata stingovi
 	nstr1=str1.length();
 	nstr2=str2.length();
+	//dopolnuvanje na prviot string so prazno mesto
+	str1.append(" ");
+	//i dopolnuvanje na prviot string so vtor string
+	str1.append(str2);
+
+	cout<<"\n Spoeni string => "<<str1;
+
+	int dolZaedno=str1.length();
+	//polnenje na stekot so vrednosti od spoeniot string
+	for(int i=0;i<dolZaedno;i++)
+		StringVek.push_back((int)str1[i]);
+
+	//dodeluvanje vo stekot data na raganje
+	StringVek.push_back(16);
+	//dodleuvanje na stekot mesec na raganje
+	StringVek.push_back(9);
+	//dodlevanje na stek godina na raganje
+	StringVek.push_back(2);
+	//pecatenje na stekot preku iterator
+	cout<<"\n\n Vektor - Int  ";
+	cout<<endl;
+	cout<<"  ";
 
 
