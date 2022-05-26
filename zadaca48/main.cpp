@@ -49,5 +49,23 @@ int main()
 	cout<<"\n\n Vektor - Int  ";
 	cout<<endl;
 	cout<<"  ";
+    for(iterString=StringVek.begin();iterString<StringVek.end();++iterString)
+	{
+		if((*iterString)!=0)
+		cout<<*iterString<<" ";
+	}
+	//Pristap do datotekata
+
+	ofstream Simona("INKI895.Proekt03.txt");
+	Simona<<"\n Spoeni string => "<<str1<<endl;
+	Simona<<"\n Vektor - Int  "<<endl<<endl;
+	//zapisuvanje na podatocite vo datoteka preku iterator
+	//prevzemeni vrendosti od vektor
+	for(iterString=StringVek.begin();iterString<StringVek.end();++iterString)
+	{
+		if((*iterString)!=0)
+		Simona<<*iterString<<" ";
+	}
+}
 
 
