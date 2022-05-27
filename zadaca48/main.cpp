@@ -11,16 +11,14 @@ using namespace std;
 int main()
 {
 	//deklaracija na promenlivi
-	string str1;
+	string str1="INKI895.Simona.Gulevska";
 	string str2;
 	string zedno;
 	//deklracija na vektor i iterator
 	vector<int> StringVek(80);
 	vector<int>::iterator iterString;
-	//vnesuvanje na dvata stringovi
-	cout<<"\n Vnesete INKIBrIndex.Ime.Prezime => ";
-	cin>>str1;
-	cout<<"\n Vnesete mail za komunikacija so fax => ";
+	//vnesuvanje na stringot
+	cout<<"\n Vnesete mail za komunikacija so fakultet => ";
 	cin>>str2;
     //deklariranje na promenlivi
 	int nstr1,nstr2;
@@ -45,7 +43,7 @@ int main()
 	StringVek.push_back(9);
 	//dodlevanje na stek godina na raganje
 	StringVek.push_back(2);
-	//pecatenje na stekot preku iterator
+	//pecatenje na stek preku iterator
 	cout<<"\n\n Vektor - Int  ";
 	cout<<endl;
 	cout<<"  ";
